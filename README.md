@@ -8,8 +8,12 @@ This project involves analyzing air temperature data using Google Cloud Platform
 ### Public Dashboard
 You can view the interactive dashboard [here](https://lookerstudio.google.com/reporting/4c21dfa2-7c42-4246-9d00-0dda3fd43cb1).
 
-## Project Architecture
+![Dashboard Preview](https://github.com/lbryant-sss/Google-Cloud-Storage-to-Bigquery-to-Lookup-Studio/blob/main/looker%20dashboard%20report%202.PNG
+)
 
+## Project Architecture
+![Project Flow Chart](https://github.com/lbryant-sss/Google-Cloud-Storage-to-Bigquery-to-Lookup-Studio/blob/main/looker%20dashboard%20report%202.PNG
+)
 ### Data Source
 - **Dataset**: NOAA Global Surface Summary of Day (GSOD)
 - **Date Range**: January 1, 1998, to January 2, 2024
@@ -18,13 +22,15 @@ You can view the interactive dashboard [here](https://lookerstudio.google.com/re
 ### Google Cloud Platform Components
 1. **Google Cloud Storage**
    - **Purpose**: Store CSV files of the dataset
-   - **Bucket Name**: `your-bucket-name`
+   - **Bucket Name**: `global-marine-weather-data`
+   ![Cloud Storage Bucket](https://github.com/lbryant-sss/Google-Cloud-Storage-to-Bigquery-to-Lookup-Studio/blob/main/bucket.PNG)  
    
 2. **BigQuery**
    - **Purpose**: Query and process the data
-   - **Dataset**: `your_dataset_name`
-   - **Table**: `your_table_name`
-
+   - **Dataset**: `global_marine_weather_data_dataset`
+   - **Table**: `global_marine_weather_data_dataset_table`
+   - ![Bigquery Table](https://github.com/lbryant-sss/Google-Cloud-Storage-to-Bigquery-to-Lookup-Studio/blob/main/table.PNG)
+   
 ### Data Processing Workflow
 1. **Data Upload**
    - Upload CSV files to Google Cloud Storage.
@@ -45,7 +51,7 @@ You can view the interactive dashboard [here](https://lookerstudio.google.com/re
      GROUP BY
        DATE
      ```
-
+   ![Example Query](https://github.com/lbryant-sss/Google-Cloud-Storage-to-Bigquery-to-Lookup-Studio/blob/main/bigquery.PNG)
 ### Data Visualization
 1. **Google Data Studio**
    - **Connection**: BigQuery

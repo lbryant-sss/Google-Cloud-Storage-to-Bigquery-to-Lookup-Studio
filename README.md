@@ -12,7 +12,7 @@ You can view the interactive dashboard [here](https://lookerstudio.google.com/re
 )
 
 ## Project Architecture
-![Project Flow Chart](https://github.com/lbryant-sss/Google-Cloud-Storage-to-Bigquery-to-Lookup-Studio/blob/main/architecture.png
+![Project Flow Chart](https://github.com/lbryant-sss/Google-Cloud-Storage-to-Bigquery-to-Lookup-Studio/blob/main/project%20architecture.png
 )
 ### Data Source
 - **Dataset**: NOAA Global Surface Summary of Day (GSOD)
